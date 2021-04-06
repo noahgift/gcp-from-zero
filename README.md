@@ -1,3 +1,5 @@
+[![Python application test with Github Actions](https://github.com/noahgift/gcp-from-zero/actions/workflows/python-publish.yml/badge.svg)](https://github.com/noahgift/gcp-from-zero/actions/workflows/python-publish.yml)
+
 # gcp-from-zero
 This is a new repo
 
