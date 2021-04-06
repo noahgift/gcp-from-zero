@@ -10,5 +10,6 @@ This is a new repo
 
 Give github this content: `cat /home/ec2-user/.ssh/id_rsa.pub`
 
+Then checkout the code.
 * Python Scaffold
 * Setup Continuous Integration
