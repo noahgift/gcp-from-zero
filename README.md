@@ -8,5 +8,7 @@ This is a new repo
 
 `ssh-keygen -t rsa`
 
+Give github this content: `cat /home/ec2-user/.ssh/id_rsa.pub`
+
 * Python Scaffold
 * Setup Continuous Integration
