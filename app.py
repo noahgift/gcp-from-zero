@@ -1,5 +1,5 @@
-#var=1
-#var=var
+var=1
+var=var
 
 
 def marco(name):
