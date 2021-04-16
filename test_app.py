@@ -2,5 +2,5 @@ from app import marco
 
 
 def test_marco():
-    assert marco("Marco") == "Marco"
+    assert marco("Marco") == "Polo"
     assert marco("Peter") == "Bob"
