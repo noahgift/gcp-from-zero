@@ -28,6 +28,8 @@ Then checkout the code.
 
 ## To integrate Cloud Build instead of Github Actions
 
+Example here:  [cloudbuild.yaml](https://github.com/noahgift/gcp-from-zero/blob/main/cloudbuild.yaml)
+
 ```
 steps:
 - name: python:3.7
