@@ -25,3 +25,29 @@ Then checkout the code.
 
 
 * Setup Continuous Integration
+
+## To integrate Cloud Build instead of Github Actions
+
+```
+steps:
+- name: python:3.7
+  id: INSTALL
+  entrypoint: python3
+  args:
+  - '-m'
+  - 'pip'
+  - 'install'
+  - '-t'
+  - '.'
+  - '-r'
+  - 'requirements.txt'
+- name: python:3.7
+  entrypoint: ./pylint_runner
+  id: LINT
+  waitFor:
+  - INSTALL
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy"]
+timeout: "1600s"
+images: ['gcr.io/$PROJECT_ID/pylint']
+```
